@@ -13,6 +13,6 @@ router.get('/uploads/:imageName',(req,res)=>{
     res.sendFile(Path.join(__dirname,'..','uploads',imageName));
 })
 
-router.delete(':/firmId',firmController.deleteFirmById);
+router.delete('/:firmId',firmController.deleteFirmById);
 
 module.exports = router;
