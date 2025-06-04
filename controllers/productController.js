@@ -3,6 +3,7 @@ const Product = require("../models/Product");
 const multer = require("multer");
 const Firm = require("../models/Firm");
 const { json } = require("body-parser");
+const path = require('path');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
